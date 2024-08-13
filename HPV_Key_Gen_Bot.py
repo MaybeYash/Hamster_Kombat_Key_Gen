@@ -10,6 +10,7 @@ from Core.Tools.Generation.HPV_Bike_Ride_3D import _HPV_Bike_Ride_3D
 
 from Core.Config.HPV_Config import TG_TOKEN
 from Core.Tools.HPV_Proxy import HPV_Proxy_Checker
+from Core.Tools.HPV_Banner import HPV_Banner
 
 
 
@@ -83,7 +84,7 @@ def HPV_INLINE(info: types.CallbackQuery):
 if __name__ == '__main__':
     while True:
         try:
-            print('Бот запущен!')
+            HPV_Banner()
             HPV.polling(none_stop=True) # Запуск бота
         except:
             continue

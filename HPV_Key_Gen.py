@@ -10,6 +10,7 @@ from Core.Tools.Generation.HPV_Train_Miner import _HPV_Train_Miner
 from Core.Tools.Generation.HPV_Bike_Ride_3D import _HPV_Bike_Ride_3D
 
 from Core.Tools.HPV_Proxy import HPV_Proxy_Checker
+from Core.Tools.HPV_Banner import HPV_Banner
 
 
 
@@ -20,6 +21,7 @@ from Core.Tools.HPV_Proxy import HPV_Proxy_Checker
 if __name__ == '__main__':
 
     sys('cls' if s_name() == 'Windows' else 'clear') # Очистка терминала
+    HPV_Banner()
     Console_Lock = Lock()
     Proxy = HPV_Proxy_Checker()
     Retry = 1 if len(Proxy) == 0 else len(Proxy) if len(Proxy) > 0 and len(Proxy) <= 50 else 50
