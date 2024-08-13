@@ -34,7 +34,7 @@ class HPV_Bike_Ride_3D:
         self.PROMO_ID = '43e35910-c168-4634-ad4f-52fd764a843f'
         self.Console_Lock = Console_Lock
 
-        self.THREAD = f'Поток №{_Thread}' # Нумерация потока
+        self.THREAD = f'Поток #{_Thread}' # Нумерация потока
         self.PROXY = Proxy # Прокси (при наличии)
         self.ID = self.HPV_ID() # Генерация уникального ID
         self.TOKEN = self.HPV_Login() # Получение токена по ID

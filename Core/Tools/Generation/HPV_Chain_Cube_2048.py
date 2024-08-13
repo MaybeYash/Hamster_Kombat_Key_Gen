@@ -34,7 +34,7 @@ class HPV_Chain_Cube_2048:
         self.PROMO_ID = 'b4170868-cef0-424f-8eb9-be0622e8e8e3'
         self.Console_Lock = Console_Lock
 
-        self.THREAD = f'Поток №{_Thread}' # Нумерация потока
+        self.THREAD = f'Поток #{_Thread}' # Нумерация потока
         self.PROXY = Proxy # Прокси (при наличии)
         self.ID = self.HPV_ID() # Генерация уникального ID
         self.TOKEN = self.HPV_Login() # Получение токена по ID
